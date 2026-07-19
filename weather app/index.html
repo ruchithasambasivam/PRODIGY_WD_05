@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Weather App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <h1>🌤 Weather App</h1>
+
+        <div class="datetime">
+            <h3 id="date"></h3>
+            <p id="time"></p>
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" id="city" placeholder="Enter city name">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <button class="location-btn" id="locationBtn">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Use Current Location
+
+        </button>
+
+        <div class="weather">
+
+            <img id="icon" src="" alt="Weather Icon">
+
+            <h2 id="cityName">City</h2>
+
+            <h1 id="temp">--°C</h1>
+
+            <p id="desc">Weather Description</p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-temperature-half"></i>
+                <h4>Feels Like</h4>
+                <p id="feels">--°C</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-droplet"></i>
+                <h4>Humidity</h4>
+                <p id="humidity">--%</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wind"></i>
+                <h4>Wind</h4>
+                <p id="wind">-- km/h</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-eye"></i>
+                <h4>Visibility</h4>
+                <p id="visibility">-- km</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-gauge"></i>
+                <h4>Pressure</h4>
+                <p id="pressure">-- hPa</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-compass"></i>
+                <h4>Wind Direction</h4>
+                <p id="direction">--°</p>
+            </div>
+
+        </div>
+
+        <div class="progress-box">
+
+            <h3>Humidity Level</h3>
+
+            <div class="progress">
+
+                <div class="progress-bar" id="progressBar"></div>
+
+            </div>
+
+        </div>
+        <div class="cards extra-cards">
+
+    <div class="card">
+        <h4>🌡 Max Temp</h4>
+        <p id="maxTemp">--°C</p>
+    </div>
+
+    <div class="card">
+        <h4>❄ Min Temp</h4>
+        <p id="minTemp">--°C</p>
+    </div>
+
+    <div class="card">
+        <h4>🌅 Sunrise</h4>
+        <p id="sunrise">--:--</p>
+    </div>
+
+    <div class="card">
+        <h4>🌇 Sunset</h4>
+        <p id="sunset">--:--</p>
+    </div>
+
+    <div class="card">
+        <h4>🕒 Updated</h4>
+        <p id="updated">--:--</p>
+    </div>
+
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
